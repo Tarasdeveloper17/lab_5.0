@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4103C8729104E5700EE7BDB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4103C8629104E5700EE7BDB /* main.cpp */; };
+		B4103C9529104EEF00EE7BDB /* unit_test.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4103C9429104EEF00EE7BDB /* unit_test.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		B4103C8329104E5700EE7BDB /* lab_5.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab_5.0; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4103C8629104E5700EE7BDB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B4103C8D29104ECD00EE7BDB /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		B4103C9229104EEF00EE7BDB /* unit_test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unit_test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4103C9429104EEF00EE7BDB /* unit_test.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = unit_test.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B4103C8029104E5700EE7BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4103C8F29104EEF00EE7BDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				B4103C8529104E5700EE7BDB /* lab_5.0 */,
+				B4103C9329104EEF00EE7BDB /* unit_test */,
 				B4103C8429104E5700EE7BDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B4103C8329104E5700EE7BDB /* lab_5.0 */,
+				B4103C9229104EEF00EE7BDB /* unit_test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +71,17 @@
 			isa = PBXGroup;
 			children = (
 				B4103C8629104E5700EE7BDB /* main.cpp */,
+				B4103C8D29104ECD00EE7BDB /* header.h */,
 			);
 			path = lab_5.0;
+			sourceTree = "<group>";
+		};
+		B4103C9329104EEF00EE7BDB /* unit_test */ = {
+			isa = PBXGroup;
+			children = (
+				B4103C9429104EEF00EE7BDB /* unit_test.mm */,
+			);
+			path = unit_test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +104,23 @@
 			productReference = B4103C8329104E5700EE7BDB /* lab_5.0 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B4103C9129104EEF00EE7BDB /* unit_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4103C9629104EEF00EE7BDB /* Build configuration list for PBXNativeTarget "unit_test" */;
+			buildPhases = (
+				B4103C8E29104EEF00EE7BDB /* Sources */,
+				B4103C8F29104EEF00EE7BDB /* Frameworks */,
+				B4103C9029104EEF00EE7BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unit_test;
+			productName = unit_test;
+			productReference = B4103C9229104EEF00EE7BDB /* unit_test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +131,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					B4103C8229104E5700EE7BDB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					B4103C9129104EEF00EE7BDB = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -110,9 +152,20 @@
 			projectRoot = "";
 			targets = (
 				B4103C8229104E5700EE7BDB /* lab_5.0 */,
+				B4103C9129104EEF00EE7BDB /* unit_test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4103C9029104EEF00EE7BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4103C7F29104E5700EE7BDB /* Sources */ = {
@@ -120,6 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4103C8729104E5700EE7BDB /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4103C8E29104EEF00EE7BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4103C9529104EEF00EE7BDB /* unit_test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +316,44 @@
 			};
 			name = Release;
 		};
+		B4103C9729104EEF00EE7BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK4GU5XTS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.unit-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4103C9829104EEF00EE7BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK4GU5XTS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.unit-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +371,15 @@
 			buildConfigurations = (
 				B4103C8B29104E5700EE7BDB /* Debug */,
 				B4103C8C29104E5700EE7BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4103C9629104EEF00EE7BDB /* Build configuration list for PBXNativeTarget "unit_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4103C9729104EEF00EE7BDB /* Debug */,
+				B4103C9829104EEF00EE7BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
